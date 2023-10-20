@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pksv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0022-tenant/ci1t-830-0022-app/devfile-sample-pksv@sha256:d983908e7ee0e8750a111aa0954f5a057fa620d46d4155e91e9288f960c8dcd2
+        name: my-nodejs
+        resources: {}
+status: {}
